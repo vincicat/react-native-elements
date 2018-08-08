@@ -54,7 +54,8 @@ const Button = ({
   iconRight,
   fontWeight,
   disabledStyle,
-  fontFamily}) => {
+  fontFamily,
+  ...attributes }) => {
   let iconElement
   if (icon) {
     let Icon
@@ -96,6 +97,8 @@ const Button = ({
   }
   return (
     <Component
+      accessibilityComponentType="button"
+      accessibilityTraits="button"
       delayLongPress={delayLongPress}
       delayPressIn={delayPressIn}
       delayPressOut={delayPressOut}
