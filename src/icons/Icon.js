@@ -17,7 +17,8 @@ const Icon = ({
     raised,
     onLongPress,
     containerStyle,
-    reverseColor
+    reverseColor,
+    ...attributes
   }) => {
   let Component = View
   if (onPress) {
@@ -34,6 +35,7 @@ const Icon = ({
   }
   return (
     <Component
+      {...attributes}
       underlayColor={
         reverse ? color : underlayColor || color
       }
