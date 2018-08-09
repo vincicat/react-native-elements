@@ -18,6 +18,7 @@ const Icon = ({
     onLongPress,
     containerStyle,
     reverseColor,
+    iconAttrs,
     ...attributes
   }) => {
   let Component = View
@@ -56,6 +57,7 @@ const Icon = ({
       onLongPress={onLongPress}
       onPress={onPress}>
       <Icon
+        {...iconAttrs}
         style={[
           {backgroundColor: 'transparent'},
           iconStyle && iconStyle
