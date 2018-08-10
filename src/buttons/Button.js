@@ -97,6 +97,7 @@ const Button = ({
   }
   return (
     <Component
+      {...attributes}
       accessibilityComponentType="button"
       accessibilityTraits="button"
       delayLongPress={delayLongPress}
